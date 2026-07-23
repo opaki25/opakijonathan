@@ -69,7 +69,7 @@ const Projects = () => {
       description: 'Tours and travel website focused on presenting travel experiences, packages, and business identity online.',
       image: '/projects/king-mozy.png',
       tech: ['Travel Website', 'React', 'Landing Page'],
-      liveUrl: 'https://king-mozy-alpha.vercel.app',
+      liveUrl: 'https://king-mozy-alpha.vercel.app/',
       gradient: 'from-orange-500 to-yellow-500',
       featured: false,
     },
