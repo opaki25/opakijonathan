@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { FiUser, FiCode, FiLayers, FiFeather, FiMail, FiBriefcase } from 'react-icons/fi'
+import { FiUser, FiCode, FiLayers, FiImage, FiMail, FiBriefcase } from 'react-icons/fi'
 
 const pages = [
   {
@@ -36,11 +36,11 @@ const pages = [
     accent: 'bg-amber-500'
   },
   {
-    name: 'Blog',
-    path: '/blog',
-    icon: <FiFeather className="w-6 h-6 md:w-8 md:h-8" />,
-    desc: 'Thoughts & insights',
-    color: 'from-pink-500/20 to-pink-600/5',
+    name: 'Gallery',
+    path: '/gallery',
+    icon: <FiImage className="w-6 h-6 md:w-8 md:h-8" />,
+    desc: 'Moments, teams & tech life',
+    color: 'from-pink-500/20 to-cyan-600/5',
     accent: 'bg-pink-500'
   },
   {

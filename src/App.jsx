@@ -6,7 +6,7 @@ import About from './sections/About'
 import Skills from './sections/Skills'
 import Projects from './sections/Projects'
 import Startups from './sections/Startups'
-import Blog from './sections/Blog'
+import Gallery from './sections/Gallery'
 import Contact from './sections/Contact'
 import Footer from './components/Footer'
 
@@ -46,7 +46,7 @@ function App() {
             <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/startups" element={<Startups />} />
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
