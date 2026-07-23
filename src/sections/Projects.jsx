@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import { useTheme } from '../context/ThemeContext'
 import GlassCard from '../components/GlassCard'
 import GlassButton from '../components/GlassButton'
@@ -10,7 +10,6 @@ const Projects = () => {
   const { isDark } = useTheme()
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
-  const [hoveredProject, setHoveredProject] = useState(null)
 
   const projects = [
     {
@@ -26,6 +25,66 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: 'Z-SPOT',
+      description: 'WiFi hotspot and networking website for promoting affordable internet access, hotspot services, and networking solutions.',
+      image: '/projects/zspot.png',
+      tech: ['Networking', 'MikroTik', 'WiFi Hotspot', 'Web Design'],
+      liveUrl: 'https://zspot.tech',
+      gradient: 'from-teal-500 to-cyan-500',
+      featured: true,
+    },
+    {
+      id: 3,
+      title: 'Bash Tours and Travels',
+      description: 'Tour and travel website built to present destinations, travel services, and booking information in a modern layout.',
+      image: '/projects/bash-tours.png',
+      tech: ['Travel Website', 'Responsive Design', 'Brand Website'],
+      liveUrl: 'https://bashtoursandtravels.com',
+      gradient: 'from-amber-500 to-emerald-500',
+      featured: true,
+    },
+    {
+      id: 4,
+      title: 'Tripoint Management Consult Limited',
+      description: 'Professional consulting website for presenting company services, credibility, and business information online.',
+      image: '/projects/tripoint.png',
+      tech: ['React', 'Consulting Website', 'Responsive UI'],
+      liveUrl: 'https://tripoint-six.vercel.app',
+      gradient: 'from-blue-500 to-indigo-500',
+      featured: false,
+    },
+    {
+      id: 5,
+      title: 'St. Basil Palliative Homecare',
+      description: 'Healthcare service website for sharing palliative care information, services, and contact details with the community.',
+      image: '/projects/st-basil.png',
+      tech: ['Healthcare Website', 'Responsive Design', 'Content Structure'],
+      liveUrl: 'https://stbasilpalliativehomecare.site',
+      gradient: 'from-emerald-500 to-cyan-500',
+      featured: false,
+    },
+    {
+      id: 6,
+      title: 'King Mozy Tours and Travels',
+      description: 'Tours and travel website focused on presenting travel experiences, packages, and business identity online.',
+      image: '/projects/king-mozy.png',
+      tech: ['Travel Website', 'React', 'Landing Page'],
+      liveUrl: 'https://king-mozy-alpha.vercel.app',
+      gradient: 'from-orange-500 to-yellow-500',
+      featured: false,
+    },
+    {
+      id: 7,
+      title: 'DIRI Uganda',
+      description: 'Digital rights platform for presenting information, advocacy content, and resources in a clear web experience.',
+      image: '/projects/diri.png',
+      tech: ['Digital Rights', 'React', 'Information Platform'],
+      liveUrl: 'https://digital-rights-diriuganda.vercel.app',
+      gradient: 'from-indigo-500 to-cyan-500',
+      featured: false,
+    },
+    {
+      id: 8,
       title: 'Guestz',
       description: 'Comprehensive hotel management system for handling bookings, guest operations, room management, and billing.',
       image: '/projects/guestz.png',
@@ -68,55 +127,27 @@ const Projects = () => {
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              onMouseEnter={() => setHoveredProject(project.id)}
-              onMouseLeave={() => setHoveredProject(null)}
+              transition={{ duration: 0.6, delay: Math.min(index * 0.08, 0.45) }}
             >
               <GlassCard 
                 className="overflow-hidden group h-full" 
                 glowColor={index % 2 === 0 ? 'cyan' : 'purple'}
               >
                 {/* Project Image/Preview */}
-                <div className="relative h-48 overflow-hidden">
-                  {/* Gradient placeholder */}
-                  <div className={`
-                    absolute inset-0 bg-gradient-to-br ${project.gradient}
-                    opacity-20 group-hover:opacity-30 transition-opacity duration-500
-                  `} />
-                  
-                  {/* Decorative 3D elements */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <motion.div
-                      className={`
-                        w-32 h-32 rounded-2xl bg-gradient-to-br ${project.gradient}
-                        opacity-80 shadow-2xl
-                      `}
-                      animate={hoveredProject === project.id ? { 
-                        rotateY: 15, 
-                        rotateX: -15,
-                        scale: 1.1 
-                      } : {}}
-                      transition={{ duration: 0.4 }}
-                    />
-                    <motion.div
-                      className="absolute w-16 h-16 rounded-xl bg-white/20 backdrop-blur-lg"
-                      style={{ top: '20%', right: '25%' }}
-                      animate={hoveredProject === project.id ? { y: -10 } : { y: 0 }}
-                      transition={{ duration: 0.4 }}
-                    />
-                    <motion.div
-                      className="absolute w-12 h-12 rounded-lg bg-white/10 backdrop-blur-lg"
-                      style={{ bottom: '20%', left: '25%' }}
-                      animate={hoveredProject === project.id ? { y: 10 } : { y: 0 }}
-                      transition={{ duration: 0.4, delay: 0.1 }}
-                    />
-                  </div>
+                <div className="relative h-48 overflow-hidden bg-black">
+                  <img
+                    src={project.image}
+                    alt={`${project.title} website preview`}
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent" />
 
                   {/* Featured badge */}
                   {project.featured && (
@@ -164,23 +195,27 @@ const Projects = () => {
                   </div>
 
                   {/* Actions */}
-                  <div className="flex gap-3">
-                    <GlassButton
-                      variant="primary"
-                      size="sm"
-                      icon={<FiExternalLink />}
-                      onClick={() => window.open(project.liveUrl, '_blank')}
-                    >
-                      Live Demo
-                    </GlassButton>
-                    <GlassButton
-                      variant="outline"
-                      size="sm"
-                      icon={<FiGithub />}
-                      onClick={() => window.open(project.githubUrl, '_blank')}
-                    >
-                      Code
-                    </GlassButton>
+                  <div className="flex flex-wrap gap-3">
+                    {project.liveUrl && project.liveUrl !== '#' && (
+                      <GlassButton
+                        variant="primary"
+                        size="sm"
+                        icon={<FiExternalLink />}
+                        onClick={() => window.open(project.liveUrl, '_blank')}
+                      >
+                        Visit Site
+                      </GlassButton>
+                    )}
+                    {project.githubUrl && (
+                      <GlassButton
+                        variant="outline"
+                        size="sm"
+                        icon={<FiGithub />}
+                        onClick={() => window.open(project.githubUrl, '_blank')}
+                      >
+                        Code
+                      </GlassButton>
+                    )}
                   </div>
                 </div>
               </GlassCard>
