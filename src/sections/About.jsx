@@ -62,8 +62,8 @@ const About = () => {
   ]
 
   const stats = [
-    { value: '5+', label: 'Technologies Used' },
-    { value: '2+', label: 'Major Projects' },
+    { value: '20+', label: 'Technologies Used' },
+    { value: '30+', label: 'Major Projects' },
     { value: '1+', label: 'Year Practical Experience' },
     { value: '100%', label: 'Passion & Commitment' },
   ]
