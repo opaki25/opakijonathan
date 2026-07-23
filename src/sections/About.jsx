@@ -138,7 +138,7 @@ const About = () => {
                     Personal Background
                   </h3>
                   <p className={`text-sm ${isDark ? 'text-cyan-400' : 'text-cyan-600'}`}>
-                    IT Student | Developer | Networking & Cybersecurity Enthusiast
+                    IT Specialist | Developer | Networking & Cybersecurity Enthusiast
                   </p>
                 </div>
               </div>
