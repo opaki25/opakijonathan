@@ -85,6 +85,81 @@ const Projects = () => {
         "gradient": "from-teal-500 to-cyan-500"
     },
     {
+        "id": 14,
+        "title": "Eden King & Queen Guest House",
+        "description": "Guest house and spa website showcasing accommodation, wellness services, a photo gallery and booking enquiries in Kampala.",
+        "image": "/projects/eden-king-queen.png",
+        "tech": [
+            "Hospitality Website",
+            "Service Showcase",
+            "Booking Enquiries"
+        ],
+        "liveUrl": "https://www.edenkingandqueenservices.com/",
+        "gradient": "from-amber-500 to-emerald-500",
+        "featured": false,
+        "status": "Website"
+    },
+    {
+        "id": 15,
+        "title": "KR Events",
+        "description": "Event styling website showcasing weddings, introductions and celebrations, with a visual portfolio and event enquiries.",
+        "image": "/projects/kr-events.png",
+        "tech": [
+            "Events Website",
+            "Visual Portfolio",
+            "Enquiry Flow"
+        ],
+        "liveUrl": "https://krevents.vercel.app/",
+        "gradient": "from-amber-500 to-yellow-500",
+        "featured": false,
+        "status": "Website"
+    },
+    {
+        "id": 16,
+        "title": "K2 Tours & Travel",
+        "description": "Uganda travel website featuring safari destinations, road trips and a guided trip-planning enquiry flow.",
+        "image": "/projects/k2.png",
+        "tech": [
+            "Travel Website",
+            "Destination Showcase",
+            "Trip Planning"
+        ],
+        "liveUrl": "https://k2-seven-pi.vercel.app/",
+        "gradient": "from-emerald-500 to-teal-500",
+        "featured": false,
+        "status": "Website"
+    },
+    {
+        "id": 17,
+        "title": "WHM & AABM Tours and Travel",
+        "description": "Tourism website presenting Uganda safaris, gorilla trekking, destinations and personalised travel enquiries.",
+        "image": "/projects/whm-abm.png",
+        "tech": [
+            "Travel Website",
+            "Safari Packages",
+            "Travel Enquiries"
+        ],
+        "liveUrl": "https://whmandaabm.vercel.app/",
+        "gradient": "from-green-500 to-amber-500",
+        "featured": false,
+        "status": "Website"
+    },
+    {
+        "id": 18,
+        "title": "Shepherd & Rita Wedding",
+        "description": "Wedding website bringing together celebration details, a photo gallery and invitation-card verification in a personal digital invitation.",
+        "image": "/projects/shepherd-rita.png",
+        "tech": [
+            "Wedding Website",
+            "Digital Invitation",
+            "Photo Gallery"
+        ],
+        "liveUrl": "https://shepherdwedsrita.vercel.app/",
+        "gradient": "from-emerald-500 to-cyan-500",
+        "featured": false,
+        "status": "Website"
+    },
+    {
         "id": 1,
         "title": "King Mozy Tours and Travels",
         "description": "Tours and travel website focused on presenting travel experiences, packages, and business identity online.",
