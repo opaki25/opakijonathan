@@ -1,6 +1,7 @@
 import GlassCard from '../components/GlassCard'
 
 const awards = [
+  { title: 'IEEE Student Branch Membership', image: '/media/ieee-student-branch.png', description: 'Joined the IEEE Mbarara University Student Branch, connecting with a global community of engineers and technology professionals.' },
   { title: 'UYIGF 2026 — Team Win', image: '/media/uyigf-team.jpg', description: 'DIRI / Netizens winning team at the Uganda Youth Internet Governance Forum, July 2026.' },
   { title: 'CITT Product Development Grant', image: '/media/citt-award.jpg', description: 'DIRI received a Product Development Grant Award from the Centre for Innovations and Technology Transfer at MUST.' },
   { title: 'World Tourism Day 2026', image: '/media/tourism-award.jpg', description: 'Winner of the World Tourism Day 2026 poster competition.' },
