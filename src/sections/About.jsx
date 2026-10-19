@@ -129,6 +129,8 @@ const About = () => {
           </motion.div>
         </div>
 
+        <Achievements embedded />
+
         {/* What I Do */}
         <motion.div
           className="mt-16 max-w-3xl"
@@ -257,8 +259,6 @@ const About = () => {
             </div>
           </GlassCard>
         </motion.div>
-
-        <Achievements embedded />
 
         {/* CTA */}
         <motion.div
