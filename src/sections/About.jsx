@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { FiArrowRight, FiBriefcase, FiCode, FiCpu, FiLayers, FiMail, FiShield, FiTarget, FiTool, FiZap } from 'react-icons/fi'
+import { FiArrowRight, FiMail, FiTarget, FiTool } from 'react-icons/fi'
 import { useTheme } from '../context/ThemeContext'
 import GlassButton from '../components/GlassButton'
 import GlassCard from '../components/GlassCard'
@@ -10,39 +10,6 @@ const About = () => {
   const { isDark } = useTheme()
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
-
-  const workAreas = [
-    {
-      icon: <FiCode />,
-      title: 'Web Development',
-      description: 'Building responsive websites and web apps using HTML, CSS, JavaScript, React, Django, and Python.',
-    },
-    {
-      icon: <FiLayers />,
-      title: 'UI/UX Design',
-      description: 'Designing clean interfaces that feel simple, modern, and easy for real users to understand.',
-    },
-    {
-      icon: <FiCpu />,
-      title: 'Networking',
-      description: 'Working with internet infrastructure, WiFi hotspot setups, and MikroTik-based network systems.',
-    },
-    {
-      icon: <FiShield />,
-      title: 'Cybersecurity',
-      description: 'Growing into security, system protection, ethical thinking, and stronger digital safety practices.',
-    },
-    {
-      icon: <FiBriefcase />,
-      title: 'Software/Product Building',
-      description: 'Creating practical business systems, apps, and digital products for students and small businesses.',
-    },
-    {
-      icon: <FiZap />,
-      title: 'AI Tools & Automation',
-      description: 'Using AI tools to speed up design, development, research, and problem-solving workflows.',
-    },
-  ]
 
   const journey = [
     'Started learning technology and design from curiosity about how digital systems work.',
@@ -170,47 +137,19 @@ const About = () => {
 
         {/* What I Do */}
         <motion.div
-          className="mt-20"
+          className="mt-16 max-w-3xl"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.35 }}
         >
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
-            <div>
-              <h3 className={`font-display font-bold text-3xl ${headingText}`}>
-                What I Do
-              </h3>
-              <p className={`mt-2 max-w-2xl ${mutedText}`}>
-                A mix of development, design, networking, and product thinking.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {workAreas.map((item, index) => (
-              <GlassCard
-                key={item.title}
-                className="p-6 h-full"
-                glowColor={index % 2 === 0 ? 'cyan' : 'purple'}
-              >
-                <div className={`
-                  w-12 h-12 rounded-xl mb-4 flex items-center justify-center text-xl
-                  ${isDark
-                    ? 'bg-gradient-to-br from-cyan-500/20 to-blue-500/20 text-cyan-400'
-                    : 'bg-gradient-to-br from-cyan-100 to-blue-100 text-cyan-600'
-                  }
-                `}>
-                  {item.icon}
-                </div>
-                <h4 className={`font-semibold text-lg mb-2 ${headingText}`}>
-                  {item.title}
-                </h4>
-                <p className={`text-sm leading-relaxed ${mutedText}`}>
-                  {item.description}
-                </p>
-              </GlassCard>
-            ))}
-          </div>
+          <h3 className={`font-display font-bold text-3xl mb-4 ${headingText}`}>
+            What I Do
+          </h3>
+          <p className={`text-base md:text-lg leading-relaxed ${cardText}`}>
+            I build websites and practical software, design easy-to-use interfaces, and
+            set up networks that connect people. My work brings together development,
+            design and entrepreneurship, with a growing focus on cybersecurity and automation.
+          </p>
         </motion.div>
 
         {/* Journey + Mission */}
