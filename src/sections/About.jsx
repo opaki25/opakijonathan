@@ -31,12 +31,6 @@ const About = () => {
     'Detail Oriented',
   ]
 
-  const stats = [
-    { value: '2', label: 'Competition Wins: UYIGF & Tourism Poster' },
-    { value: '4', label: 'Z-SPOT Service Locations' },
-    { value: '2026', label: 'Millennium Fellowship Class' },
-  ]
-
   const cardText = isDark ? 'text-gray-300' : 'text-gray-600'
   const mutedText = isDark ? 'text-gray-400' : 'text-gray-600'
   const headingText = isDark ? 'text-white' : 'text-gray-900'
@@ -262,25 +256,6 @@ const About = () => {
               ))}
             </div>
           </GlassCard>
-        </motion.div>
-
-        {/* Stats */}
-        <motion.div
-          className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-16"
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.75 }}
-        >
-          {stats.map((stat) => (
-            <GlassCard key={stat.label} className="p-6 text-center" hover={false}>
-              <div className="font-display font-bold text-3xl md:text-4xl mb-2 gradient-text">
-                {stat.value}
-              </div>
-              <p className={`text-sm leading-tight ${mutedText}`}>
-                {stat.label}
-              </p>
-            </GlassCard>
-          ))}
         </motion.div>
 
         <Achievements embedded />
