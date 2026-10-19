@@ -49,7 +49,7 @@ const About = () => {
     'Built small websites, app ideas, and business tools while sharpening my development skills.',
     'Moved into networking, WiFi hotspot systems, MikroTik tools, and internet infrastructure.',
     'Co-running Z-SPOT across four service locations while developing software and design work through Zhed Labs.',
-    'Leading DIRI through market research with 49 responses, a UYIGF 2026 team win and a CITT product development grant.',
+    'Leading DIRI, a digital-rights innovation recognised at UYIGF 2026 and supported by a CITT product development grant.',
     'Joining the Millennium Fellowship Class of 2026 and winning the World Tourism Day 2026 poster competition.',
   ]
 
@@ -67,7 +67,6 @@ const About = () => {
   const stats = [
     { value: '2', label: 'Competition Wins: UYIGF & Tourism Poster' },
     { value: '4', label: 'Z-SPOT Service Locations' },
-    { value: '49', label: 'DIRI Survey Responses' },
     { value: '2026', label: 'Millennium Fellowship Class' },
   ]
 
@@ -328,7 +327,7 @@ const About = () => {
 
         {/* Stats */}
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-16"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-16"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.75 }}

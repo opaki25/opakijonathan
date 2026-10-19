@@ -15,7 +15,7 @@ const Projects = () => {
     {
         "id": 7,
         "title": "DIRI Uganda",
-        "description": "Digital-rights innovation combining technical work, leadership and advocacy. UYIGF 2026 winning team, CITT product development grant and 49 market survey responses.",
+        "description": "Digital-rights innovation combining technical work, leadership and advocacy. UYIGF 2026 winning team and recipient of a CITT product development grant.",
         "image": "/projects/diri.png",
         "tech": [
             "Digital Rights",

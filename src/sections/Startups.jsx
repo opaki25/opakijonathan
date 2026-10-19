@@ -21,7 +21,7 @@ const startups = [
   {
     name: 'DIRI', category: 'Digital Rights Innovation', status: 'Building',
     role: 'Innovation Lead', tools: ['React', 'Digital Rights', 'User Research'], icon: <FiLayers />,
-    description: 'Leading a digital-rights innovation with 49 market survey responses, a UYIGF 2026 team win and a CITT product development grant.',
+    description: 'Leading a digital-rights innovation recognised at UYIGF 2026 and supported by a CITT product development grant.',
     goal: 'Make digital-rights information more accessible and understandable in Uganda.',
   },
   {
