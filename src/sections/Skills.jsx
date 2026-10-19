@@ -165,7 +165,7 @@ const Skills = () => {
               Other Tools & Platforms
             </h3>
             <div className="flex flex-wrap justify-center gap-4">
-              {['Antigravity', 'Google Stitch', 'Namecheap', 'Operating Systems', 'AI Tools'].map((tool) => (
+              {['Codex', 'Antigravity', 'Google Stitch', 'Namecheap', 'Operating Systems', 'AI Tools'].map((tool) => (
                 <span
                   key={tool}
                   className={`
