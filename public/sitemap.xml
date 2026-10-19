@@ -28,4 +28,6 @@
     <loc>https://opaki.dev/contact</loc>
     <priority>0.8</priority>
   </url>
+  <url><loc>https://opaki.dev/experience</loc><priority>0.8</priority></url>
+  <url><loc>https://opaki.dev/achievements</loc><priority>0.8</priority></url>
 </urlset>
