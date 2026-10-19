@@ -1,3 +1,4 @@
+import { FaXTwitter } from 'react-icons/fa6'
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
@@ -27,6 +28,12 @@ const Contact = () => {
       href: 'mailto:jonathanopaki@gmail.com',
     },
     {
+      icon: <FiMail />,
+      label: 'Alternative Email',
+      value: 'opakijonathan30@gmail.com',
+      href: 'mailto:opakijonathan30@gmail.com',
+    },
+    {
       icon: <FiPhone />,
       label: 'WhatsApp',
       value: '+256 777 038 299',
@@ -43,6 +50,7 @@ const Contact = () => {
   const socialLinks = [
     { icon: <FiGithub />, label: 'GitHub', href: 'https://github.com/opaki25' },
     { icon: <FiLinkedin />, label: 'LinkedIn', href: 'https://linkedin.com/in/opakrwoth-jonathan' },
+    { icon: <FaXTwitter />, href: 'https://x.com/Opaki_J', label: 'X' },
     { icon: <FiMessageCircle />, label: 'WhatsApp', href: 'https://wa.me/256777038299' },
   ]
 
@@ -257,7 +265,7 @@ const Contact = () => {
                       <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
                         {item.label}
                       </p>
-                      <p className={`font-medium ${isDark ? 'text-white' : 'text-gray-900'}`}>
+                      <p className={`font-medium break-all ${isDark ? 'text-white' : 'text-gray-900'}`}>
                         {item.value}
                       </p>
                     </div>
@@ -271,7 +279,7 @@ const Contact = () => {
               <h3 className={`font-display font-semibold text-xl mb-6 ${isDark ? 'text-white' : 'text-gray-900'}`}>
                 Follow Me
               </h3>
-              <div className="flex gap-4">
+              <div className="flex flex-wrap gap-4">
                 {socialLinks.map((link) => (
                   <motion.a
                     key={link.label}

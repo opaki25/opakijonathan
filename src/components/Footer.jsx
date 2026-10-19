@@ -1,3 +1,4 @@
+import { FaXTwitter } from 'react-icons/fa6'
 import { motion } from 'framer-motion'
 import { FiGithub, FiLinkedin, FiMail, FiPhone } from 'react-icons/fi'
 
@@ -6,7 +7,9 @@ const Footer = () => {
   const socialLinks = [
     { icon: <FiGithub />, href: 'https://github.com/opaki25', label: 'GitHub' },
     { icon: <FiLinkedin />, href: 'https://linkedin.com/in/opakrwoth-jonathan', label: 'LinkedIn' },
+    { icon: <FaXTwitter />, href: 'https://x.com/Opaki_J', label: 'X' },
     { icon: <FiMail />, href: 'mailto:jonathanopaki@gmail.com', label: 'Email' },
+    { icon: <FiMail />, href: 'mailto:opakijonathan30@gmail.com', label: 'Alternative Email' },
     { icon: <FiPhone />, href: 'https://wa.me/256777038299', label: 'WhatsApp' },
   ]
 
@@ -23,7 +26,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo & Copyright */}
           <div className="flex flex-col items-center md:items-start gap-3">
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap justify-center items-center gap-3">
               <img
                 src="/profile-icon-192.png"
                 alt="Opakrwoth Jonathan"

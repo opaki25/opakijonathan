@@ -1,3 +1,4 @@
+import { FaXTwitter } from 'react-icons/fa6'
 import { motion } from 'framer-motion'
 import { useTheme } from '../context/ThemeContext'
 import GlassButton from '../components/GlassButton'
@@ -132,6 +133,7 @@ const Hero = () => {
               {[
                 { icon: <FiGithub />, href: 'https://github.com/opaki25', label: 'GitHub' },
                 { icon: <FiLinkedin />, href: 'https://linkedin.com/in/opakrwoth-jonathan', label: 'LinkedIn' },
+    { icon: <FaXTwitter />, href: 'https://x.com/Opaki_J', label: 'X' },
               ].map((social) => (
                 <motion.a
                   key={social.label}
