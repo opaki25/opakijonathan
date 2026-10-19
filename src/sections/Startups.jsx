@@ -10,13 +10,19 @@ const startups = [
     name: 'Z-SPOT',
     category: 'WiFi Hotspot & Networking Business',
     status: 'Active',
-    role: 'Founder / CEO',
+    role: 'Business Co-lead',
     tools: ['MikroTik', 'WiFi Hotspot', 'Networking', 'Internet Infrastructure'],
     icon: <FiWifi />,
     description:
-      'Z-SPOT is a WiFi hotspot and networking business focused on providing affordable and reliable internet access to students, hostels, and local communities.',
+      'I co-run Z-SPOT across four service locations, providing internet access to students, hostels and local communities through practical networking and service delivery.',
     goal:
       'To make internet access easier, cheaper, and more reliable for people around me.',
+  },
+  {
+    name: 'DIRI', category: 'Digital Rights Innovation', status: 'Building',
+    role: 'Innovation Lead', tools: ['React', 'Digital Rights', 'User Research'], icon: <FiLayers />,
+    description: 'Leading a digital-rights innovation with 49 market survey responses, a UYIGF 2026 team win and a CITT product development grant.',
+    goal: 'Make digital-rights information more accessible and understandable in Uganda.',
   },
   {
     name: 'Zhed Labs',
@@ -29,6 +35,12 @@ const startups = [
       'Zhed Labs is a software and design startup focused on creating practical digital solutions such as websites, apps, business systems, and automation tools.',
     goal:
       'To build affordable digital products that solve real problems for businesses, students, and communities.',
+  },
+  {
+    name: 'MAGMA', category: 'Product Exploration', status: 'In Development',
+    role: 'Project involvement — details to follow', tools: ['Product Development'], icon: <FiCpu />,
+    description: 'Part of my developing technology product portfolio. A full case study will follow when its scope, role and demo are ready to share.',
+    goal: 'Develop the concept into a practical, clearly documented product.',
   },
   {
     name: 'Z-NET',

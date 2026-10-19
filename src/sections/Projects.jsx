@@ -13,88 +13,188 @@ const Projects = () => {
 
   const projects = [
     {
-      id: 1,
-      title: 'King Mozy Tours and Travels',
-      description: 'Tours and travel website focused on presenting travel experiences, packages, and business identity online.',
-      image: '/projects/king-mozy.png',
-      tech: ['Travel Website', 'React', 'Landing Page'],
-      liveUrl: 'https://king-mozy-alpha.vercel.app/',
-      gradient: 'from-orange-500 to-yellow-500',
-      featured: true,
+        "id": 7,
+        "title": "DIRI Uganda",
+        "description": "Digital-rights innovation combining technical work, leadership and advocacy. UYIGF 2026 winning team, CITT product development grant and 49 market survey responses.",
+        "image": "/projects/diri.png",
+        "tech": [
+            "Digital Rights",
+            "React",
+            "Information Platform"
+        ],
+        "liveUrl": "https://digital-rights-diriuganda.vercel.app",
+        "gradient": "from-indigo-500 to-cyan-500",
+        "featured": true,
+        "status": "Award-winning innovation"
     },
     {
-      id: 2,
-      title: 'Bash Tours and Travels',
-      description: 'Tour and travel website built to present destinations, travel services, and booking information in a modern layout.',
-      image: '/projects/bash-tours.png',
-      tech: ['Travel Website', 'Responsive Design', 'Brand Website'],
-      liveUrl: 'https://bashtoursandtravels.com',
-      gradient: 'from-amber-500 to-emerald-500',
-      featured: true,
+        "id": 4,
+        "title": "Z-SPOT",
+        "description": "A Wi-Fi business I co-run across four service locations, providing internet access to students, hostels and local communities through hands-on networking and service delivery.",
+        "image": "/projects/zspot.png",
+        "tech": [
+            "Networking",
+            "MikroTik",
+            "WiFi Hotspot",
+            "Web Design"
+        ],
+        "liveUrl": "https://zspot.tech",
+        "gradient": "from-teal-500 to-cyan-500",
+        "featured": true,
+        "status": "Operating business"
     },
     {
-      id: 3,
-      title: 'Attendeez',
-      description: 'Event RSVP and attendance management system. Track event registrations, manage guest lists, and monitor attendance in real-time.',
-      image: '/projects/attendeez.png',
-      tech: ['React', 'Python', 'Django', 'PostgreSQL'],
-      liveUrl: 'https://attendeez.site',
-      githubUrl: 'https://github.com/opaki25/attendeez',
-      gradient: 'from-cyan-500 to-blue-500',
-      featured: true,
+        "id": 3,
+        "title": "Attendeez",
+        "description": "An event RSVP and attendance management project exploring registration and guest-list workflows. Current deployment and shipped features are under review.",
+        "image": "/projects/attendeez.png",
+        "tech": [
+            "React",
+            "Python",
+            "Django",
+            "PostgreSQL"
+        ],
+        "liveUrl": null,
+        "githubUrl": "https://github.com/opaki25/attendeez",
+        "gradient": "from-cyan-500 to-blue-500",
+        "featured": true,
+        "status": "In development"
     },
     {
-      id: 4,
-      title: 'Z-SPOT',
-      description: 'WiFi hotspot and networking website for promoting affordable internet access, hotspot services, and networking solutions.',
-      image: '/projects/zspot.png',
-      tech: ['Networking', 'MikroTik', 'WiFi Hotspot', 'Web Design'],
-      liveUrl: 'https://zspot.tech',
-      gradient: 'from-teal-500 to-cyan-500',
-      featured: true,
+        "id": 9,
+        "title": "MAGMA",
+        "description": "Part of my developing technology product portfolio. A detailed case study will follow as the scope, role and demo are ready to share.",
+        "tech": [
+            "Product Development"
+        ],
+        "featured": true,
+        "status": "Work in progress",
+        "gradient": "from-orange-500 to-red-500"
     },
     {
-      id: 5,
-      title: 'Tripoint Management Consult Limited',
-      description: 'Professional consulting website for presenting company services, credibility, and business information online.',
-      image: '/projects/tripoint.png',
-      tech: ['React', 'Consulting Website', 'Responsive UI'],
-      liveUrl: 'https://tripoint-six.vercel.app',
-      gradient: 'from-blue-500 to-indigo-500',
-      featured: false,
+        "id": 10,
+        "title": "Z-NET",
+        "description": "Hotspot billing and management software in development, with planned workflows for users, vouchers, payments and internet access.",
+        "tech": [
+            "MikroTik",
+            "Hotspot Billing",
+            "Product Design"
+        ],
+        "featured": true,
+        "status": "In development",
+        "gradient": "from-teal-500 to-cyan-500"
     },
     {
-      id: 6,
-      title: 'St. Basil Palliative Homecare',
-      description: 'Healthcare service website for sharing palliative care information, services, and contact details with the community.',
-      image: '/projects/st-basil.png',
-      tech: ['Healthcare Website', 'Responsive Design', 'Content Structure'],
-      liveUrl: 'https://stbasilpalliativehomecare.site',
-      gradient: 'from-emerald-500 to-cyan-500',
-      featured: false,
+        "id": 1,
+        "title": "King Mozy Tours and Travels",
+        "description": "Tours and travel website focused on presenting travel experiences, packages, and business identity online.",
+        "image": "/projects/king-mozy.png",
+        "tech": [
+            "Travel Website",
+            "React",
+            "Landing Page"
+        ],
+        "liveUrl": "https://king-mozy-alpha.vercel.app/",
+        "gradient": "from-orange-500 to-yellow-500",
+        "featured": false,
+        "status": "Project archive"
     },
     {
-      id: 7,
-      title: 'DIRI Uganda',
-      description: 'Digital rights platform for presenting information, advocacy content, and resources in a clear web experience.',
-      image: '/projects/diri.png',
-      tech: ['Digital Rights', 'React', 'Information Platform'],
-      liveUrl: 'https://digital-rights-diriuganda.vercel.app',
-      gradient: 'from-indigo-500 to-cyan-500',
-      featured: false,
+        "id": 2,
+        "title": "Bash Tours and Travels",
+        "description": "Tour and travel website built to present destinations, travel services, and booking information in a modern layout.",
+        "image": "/projects/bash-tours.png",
+        "tech": [
+            "Travel Website",
+            "Responsive Design",
+            "Brand Website"
+        ],
+        "liveUrl": "https://bashtoursandtravels.com",
+        "gradient": "from-amber-500 to-emerald-500",
+        "featured": false,
+        "status": "Project archive"
     },
     {
-      id: 8,
-      title: 'Guestz',
-      description: 'Comprehensive hotel management system for handling bookings, guest operations, room management, and billing.',
-      image: '/projects/guestz.png',
-      tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-      liveUrl: '#',
-      githubUrl: 'https://github.com/opaki25/guestz',
-      gradient: 'from-purple-500 to-pink-500',
-      featured: true,
+        "id": 5,
+        "title": "Tripoint Management Consult Limited",
+        "description": "Professional consulting website for presenting company services, credibility, and business information online.",
+        "image": "/projects/tripoint.png",
+        "tech": [
+            "React",
+            "Consulting Website",
+            "Responsive UI"
+        ],
+        "liveUrl": "https://tripoint-six.vercel.app",
+        "gradient": "from-blue-500 to-indigo-500",
+        "featured": false,
+        "status": "Project archive"
     },
-  ]
+    {
+        "id": 6,
+        "title": "St. Basil Palliative Homecare",
+        "description": "Healthcare service website for sharing palliative care information, services, and contact details with the community.",
+        "image": "/projects/st-basil.png",
+        "tech": [
+            "Healthcare Website",
+            "Responsive Design",
+            "Content Structure"
+        ],
+        "liveUrl": "https://stbasilpalliativehomecare.site",
+        "gradient": "from-emerald-500 to-cyan-500",
+        "featured": false,
+        "status": "Project archive"
+    },
+    {
+        "id": 8,
+        "title": "Guestz",
+        "description": "Hotel management prototype exploring bookings, guest operations, rooms and billing.",
+        "image": "/projects/guestz.png",
+        "tech": [
+            "React",
+            "Node.js",
+            "MongoDB",
+            "Express"
+        ],
+        "liveUrl": "#",
+        "githubUrl": "https://github.com/opaki25/guestz",
+        "gradient": "from-purple-500 to-pink-500",
+        "featured": false,
+        "status": "Prototype"
+    },
+    {
+        "id": 11,
+        "title": "ZECLAIM",
+        "description": "An early product exploration in my ongoing workbench. Further details will be shared as the concept develops.",
+        "tech": [
+            "Product Exploration"
+        ],
+        "featured": false,
+        "status": "Early exploration",
+        "gradient": "from-purple-500 to-blue-500"
+    },
+    {
+        "id": 12,
+        "title": "Class Flow",
+        "description": "An early product exploration in my ongoing workbench. Further details will be shared as the concept develops.",
+        "tech": [
+            "Product Exploration"
+        ],
+        "featured": false,
+        "status": "Early exploration",
+        "gradient": "from-purple-500 to-blue-500"
+    },
+    {
+        "id": 13,
+        "title": "AccountMe",
+        "description": "An early product exploration in my ongoing workbench. Further details will be shared as the concept develops.",
+        "tech": [
+            "Product Exploration"
+        ],
+        "featured": false,
+        "status": "Early exploration",
+        "gradient": "from-purple-500 to-blue-500"
+    }
+]
 
   return (
     <section id="projects" className="relative py-24 px-4" ref={ref}>
@@ -122,7 +222,7 @@ const Projects = () => {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className={`mt-4 max-w-2xl mx-auto ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-            A showcase of projects that demonstrate my skills in web development and problem-solving
+            Award-winning innovations, operating ventures, client websites and early explorations — with each project’s stage clearly labelled.
           </p>
         </motion.div>
 
@@ -141,21 +241,21 @@ const Projects = () => {
               >
                 {/* Project Image/Preview */}
                 <div className="relative h-48 overflow-hidden bg-black">
-                  <img
+                  {project.image ? <img
                     src={project.image}
                     alt={`${project.title} website preview`}
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                     loading="lazy"
-                  />
+                  /> : <div className={`absolute inset-0 flex items-center justify-center bg-gradient-to-br ${project.gradient}`}><span className="font-display text-4xl font-bold text-white">{project.title}</span></div>}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent" />
 
                   {/* Featured badge */}
-                  {project.featured && (
+                  {project.status && (
                     <div className={`
                       absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-medium
                       bg-gradient-to-r ${project.gradient} text-white
                     `}>
-                      Featured
+                      {project.status}
                     </div>
                   )}
                 </div>
@@ -170,7 +270,7 @@ const Projects = () => {
                   </h3>
                   
                   <p className={`
-                    mb-4 line-clamp-3
+                    mb-4
                     ${isDark ? 'text-gray-400' : 'text-gray-600'}
                   `}>
                     {project.description}

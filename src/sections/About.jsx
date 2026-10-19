@@ -4,6 +4,7 @@ import { FiArrowRight, FiBriefcase, FiCode, FiCpu, FiLayers, FiMail, FiShield, F
 import { useTheme } from '../context/ThemeContext'
 import GlassButton from '../components/GlassButton'
 import GlassCard from '../components/GlassCard'
+import Achievements from './Achievements'
 
 const About = () => {
   const { isDark } = useTheme()
@@ -47,7 +48,9 @@ const About = () => {
     'Started learning technology and design from curiosity about how digital systems work.',
     'Built small websites, app ideas, and business tools while sharpening my development skills.',
     'Moved into networking, WiFi hotspot systems, MikroTik tools, and internet infrastructure.',
-    'Currently growing into cybersecurity, networking, and software entrepreneurship through Z-SPOT and Zhed Labs.',
+    'Co-running Z-SPOT across four service locations while developing software and design work through Zhed Labs.',
+    'Leading DIRI through market research with 49 responses, a UYIGF 2026 team win and a CITT product development grant.',
+    'Joining the Millennium Fellowship Class of 2026 and winning the World Tourism Day 2026 poster competition.',
   ]
 
   const values = [
@@ -62,10 +65,10 @@ const About = () => {
   ]
 
   const stats = [
-    { value: '20+', label: 'Technologies Used' },
-    { value: '30+', label: 'Major Projects' },
-    { value: '1+', label: 'Year Practical Experience' },
-    { value: '100%', label: 'Passion & Commitment' },
+    { value: '2', label: 'Competition Wins: UYIGF & Tourism Poster' },
+    { value: '4', label: 'Z-SPOT Service Locations' },
+    { value: '49', label: 'DIRI Survey Responses' },
+    { value: '2026', label: 'Millennium Fellowship Class' },
   ]
 
   const cardText = isDark ? 'text-gray-300' : 'text-gray-600'
@@ -95,7 +98,7 @@ const About = () => {
             Building with <span className="gradient-text">Purpose</span>
           </h2>
           <p className={`mt-5 max-w-3xl mx-auto text-base md:text-lg leading-relaxed ${mutedText}`}>
-            I am Opakrwoth Jonathan, also known as Opaki Jonathan, an IT student at Mbarara
+            I am Opakrwoth Jonathan, also known as Opaki Jonathan, a second-year IT student at Mbarara
             University of Science and Technology in Uganda.
           </p>
         </motion.div>
@@ -138,7 +141,7 @@ const About = () => {
                     Personal Background
                   </h3>
                   <p className={`text-sm ${isDark ? 'text-cyan-400' : 'text-cyan-600'}`}>
-                    IT Specialist | Developer | Networking & Cybersecurity Enthusiast
+                    Developer | Entrepreneur | Networking & Cybersecurity Enthusiast
                   </p>
                 </div>
               </div>
@@ -151,7 +154,7 @@ const About = () => {
                   networking, cybersecurity, and using AI tools to build better solutions.
                 </p>
                 <p>
-                  Today, I build practical digital products and business systems while learning how
+                  Today, I lead DIRI, our award-winning digital-rights innovation, and build practical digital products while learning how
                   to design stronger network infrastructure. I work with projects like Z-SPOT, a
                   WiFi hotspot and networking business, and Zhed Labs, a software and design startup
                   focused on useful digital solutions.
@@ -341,6 +344,8 @@ const About = () => {
             </GlassCard>
           ))}
         </motion.div>
+
+        <Achievements embedded />
 
         {/* CTA */}
         <motion.div

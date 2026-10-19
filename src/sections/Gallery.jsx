@@ -4,6 +4,16 @@ import { FiCamera, FiImage, FiMaximize2, FiX } from 'react-icons/fi'
 import GlassCard from '../components/GlassCard'
 
 const galleryPhotos = [
+  { src: '/media/uyigf-team.jpg', title: 'DIRI — UYIGF 2026 Winning Team', category: 'Events' },
+  { src: '/media/citt-award.jpg', title: 'DIRI — CITT Product Development Grant', category: 'Events' },
+  { src: '/media/tourism-poster.jpg', title: 'World Tourism Day 2026 — Winning Poster', category: 'Design' },
+  { src: '/media/tourism-award.jpg', title: 'World Tourism Day Poster Award', category: 'Design' },
+  { src: '/media/speaking.jpg', title: 'Presenting Ideas', category: 'Events' },
+  { src: '/media/innovation-pitch.jpg', title: 'Innovation Pitch With the Team', category: 'Team' },
+  { src: '/media/uyigf-stage.jpg', title: 'Celebrating DIRI at UYIGF', category: 'Events' },
+  { src: '/media/portrait.jpg', title: 'Opaki Jonathan', category: 'Personal' },
+  { src: '/media/campus.jpg', title: 'On Campus', category: 'Personal' },
+  { src: '/media/outside-work.jpg', title: 'Beyond the Screen', category: 'Life' },
   { src: '/gallery/gallery-01.jpg', title: 'Building With Friends', category: 'Team' },
   { src: '/gallery/gallery-02.jpg', title: 'Project Presentation', category: 'Campus' },
   { src: '/gallery/gallery-03.jpg', title: 'Tech Team Moment', category: 'Events' },
@@ -38,6 +48,7 @@ const galleryPhotos = [
 const featuredPhotos = galleryPhotos.slice(0, 3)
 
 const categoryStyles = {
+  Design: 'bg-pink-500/15 text-pink-200 border-pink-400/20',
   Team: 'bg-cyan-500/15 text-cyan-200 border-cyan-400/20',
   Campus: 'bg-blue-500/15 text-blue-200 border-blue-400/20',
   Events: 'bg-purple-500/15 text-purple-200 border-purple-400/20',
@@ -90,8 +101,8 @@ const Gallery = () => {
                   <p className="text-xs md:text-sm text-gray-400">Photos</p>
                 </div>
                 <div>
-                  <p className="text-3xl md:text-4xl font-bold text-blue-300">8</p>
-                  <p className="text-xs md:text-sm text-gray-400">Stories</p>
+                  <p className="text-3xl md:text-4xl font-bold text-blue-300">{new Set(galleryPhotos.map(photo => photo.category)).size}</p>
+                  <p className="text-xs md:text-sm text-gray-400">Categories</p>
                 </div>
                 <div>
                   <p className="text-3xl md:text-4xl font-bold text-purple-300">100%</p>
@@ -168,6 +179,16 @@ const Gallery = () => {
         </div>
       </div>
 
+      <div className="relative z-10 max-w-7xl mx-auto mt-10 mb-8">
+        <GlassCard className="p-6 md:p-8" hover={false}>
+          <h2 className="font-display text-2xl font-semibold text-white mb-3">World Tourism Day Conference</h2>
+          <p className="text-gray-400 mb-6">A short moment from the tourism conference stage, alongside the winning poster and award photographs.</p>
+          <video controls muted playsInline preload="none" poster="/media/tourism-award.jpg" className="w-full max-h-[560px] rounded-2xl bg-black" aria-label="World Tourism Day conference stage clip">
+            <source src="/media/tourism-conference.mp4" type="video/mp4" />
+            <a href="/media/tourism-conference.mp4">Download the conference clip</a>
+          </video>
+        </GlassCard>
+      </div>
       <AnimatePresence>
         {selectedPhoto && (
           <motion.div

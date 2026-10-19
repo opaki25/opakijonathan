@@ -13,3 +13,5 @@ The October 2026 refresh uses the supplied narrative, photographs and existing r
 - The supplied MP4 shows the World Tourism Day conference stage. Included with controls, muted by default and no autoplay. An audio transcript/captions remain to be supplied.
 - No private financial agreements, ownership percentages or internal budgets are included. Public award photographs retain their original visible award information.
 
+
+The original full-screen hero, six-card homepage and glass UI are retained. Updated achievements and leadership live in About; experience lives in Startups & Businesses. The gallery preserves its original photographs and adds the supplied media.

@@ -7,7 +7,7 @@ const pages = [
     name: 'About Me',
     path: '/about',
     icon: <FiUser className="w-6 h-6 md:w-8 md:h-8" />,
-    desc: 'My journey and background',
+    desc: 'My journey, milestones & leadership',
     color: 'from-blue-500/20 to-blue-600/5',
     accent: 'bg-blue-500'
   },
@@ -31,7 +31,7 @@ const pages = [
     name: 'Startups & Businesses',
     path: '/startups',
     icon: <FiBriefcase className="w-6 h-6 md:w-8 md:h-8" />,
-    desc: 'Ventures, brands & business ideas',
+    desc: 'Experience, ventures & products',
     color: 'from-amber-500/20 to-cyan-600/5',
     accent: 'bg-amber-500'
   },
@@ -39,7 +39,7 @@ const pages = [
     name: 'Gallery',
     path: '/gallery',
     icon: <FiImage className="w-6 h-6 md:w-8 md:h-8" />,
-    desc: 'Moments, teams & tech life',
+    desc: 'Awards, design & moments',
     color: 'from-pink-500/20 to-cyan-600/5',
     accent: 'bg-pink-500'
   },
@@ -93,7 +93,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            IT Specialist
+            Developer & Entrepreneur
           </motion.p>
           </div>
         </div>
