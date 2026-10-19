@@ -28,7 +28,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo & Copyright */}
           <div className="flex flex-col items-center md:items-start gap-3">
-            <div className="flex flex-wrap justify-center items-center gap-3">
+            <div className="flex items-center gap-3">
               <img
                 src="/profile-icon-192.png"
                 alt="Opakrwoth Jonathan"
@@ -44,17 +44,18 @@ const Footer = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex items-center gap-3">
-            {socialLinks.map((link, index) => (
+          <div className="flex flex-wrap justify-center gap-3 w-full max-w-[240px] sm:w-auto sm:max-w-none" aria-label="Social and contact links">
+            {socialLinks.map((link) => (
               <motion.a
                 key={link.label}
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-gradient-to-br from-white/[0.08] to-white/[0.02] text-gray-400 hover:text-cyan-400 border border-white/[0.08] hover:border-cyan-500/30 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] backdrop-blur-lg transition-all duration-300 ease-out"
+                className="w-11 h-11 shrink-0 flex items-center justify-center rounded-xl bg-gradient-to-br from-white/[0.08] to-white/[0.02] text-gray-400 hover:text-cyan-400 border border-white/[0.08] hover:border-cyan-500/30 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] backdrop-blur-lg transition-all duration-300 ease-out"
                 whileHover={{ scale: 1.08, y: -3 }}
                 whileTap={{ scale: 0.95 }}
                 aria-label={link.label}
+                title={link.label}
               >
                 <span className="text-lg">{link.icon}</span>
               </motion.a>
