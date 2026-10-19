@@ -4,7 +4,7 @@ const awards = [
   { title: 'UYIGF 2026 — Team Win', image: '/media/uyigf-team.jpg', description: 'DIRI / Netizens winning team at the Uganda Youth Internet Governance Forum, July 2026.' },
   { title: 'CITT Product Development Grant', image: '/media/citt-award.jpg', description: 'DIRI received a Product Development Grant Award from the Centre for Innovations and Technology Transfer at MUST.' },
   { title: 'World Tourism Day 2026', image: '/media/tourism-award.jpg', description: 'Winner of the World Tourism Day 2026 poster competition.' },
-  { title: 'Millennium Fellowship', description: 'Selected for the Class of 2026, continuing my journey in leadership and social impact.' },
+  { title: 'Millennium Fellowship', image: '/media/millennium-fellowship-2026.png', description: 'Selected for the Class of 2026, continuing my journey in leadership and social impact.' },
 ]
 
 export default function Achievements({ embedded = false }) {
