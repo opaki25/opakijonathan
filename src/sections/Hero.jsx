@@ -1,3 +1,4 @@
+import { FiInstagram } from 'react-icons/fi'
 import { FaXTwitter } from 'react-icons/fa6'
 import { motion } from 'framer-motion'
 import { useTheme } from '../context/ThemeContext'
@@ -134,6 +135,7 @@ const Hero = () => {
                 { icon: <FiGithub />, href: 'https://github.com/opaki25', label: 'GitHub' },
                 { icon: <FiLinkedin />, href: 'https://linkedin.com/in/opakrwoth-jonathan', label: 'LinkedIn' },
     { icon: <FaXTwitter />, href: 'https://x.com/Opaki_J', label: 'X' },
+    { icon: <FiInstagram />, href: 'https://www.instagram.com/opaki_jonathan_/', label: 'Instagram' },
               ].map((social) => (
                 <motion.a
                   key={social.label}

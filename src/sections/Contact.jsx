@@ -1,3 +1,4 @@
+import { FiInstagram } from 'react-icons/fi'
 import { FaXTwitter } from 'react-icons/fa6'
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
@@ -51,6 +52,7 @@ const Contact = () => {
     { icon: <FiGithub />, label: 'GitHub', href: 'https://github.com/opaki25' },
     { icon: <FiLinkedin />, label: 'LinkedIn', href: 'https://linkedin.com/in/opakrwoth-jonathan' },
     { icon: <FaXTwitter />, href: 'https://x.com/Opaki_J', label: 'X' },
+    { icon: <FiInstagram />, href: 'https://www.instagram.com/opaki_jonathan_/', label: 'Instagram' },
     { icon: <FiMessageCircle />, label: 'WhatsApp', href: 'https://wa.me/256777038299' },
   ]
 

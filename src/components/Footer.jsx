@@ -1,3 +1,4 @@
+import { FiInstagram } from 'react-icons/fi'
 import { FaXTwitter } from 'react-icons/fa6'
 import { motion } from 'framer-motion'
 import { FiGithub, FiLinkedin, FiMail, FiPhone } from 'react-icons/fi'
@@ -8,6 +9,7 @@ const Footer = () => {
     { icon: <FiGithub />, href: 'https://github.com/opaki25', label: 'GitHub' },
     { icon: <FiLinkedin />, href: 'https://linkedin.com/in/opakrwoth-jonathan', label: 'LinkedIn' },
     { icon: <FaXTwitter />, href: 'https://x.com/Opaki_J', label: 'X' },
+    { icon: <FiInstagram />, href: 'https://www.instagram.com/opaki_jonathan_/', label: 'Instagram' },
     { icon: <FiMail />, href: 'mailto:jonathanopaki@gmail.com', label: 'Email' },
     { icon: <FiMail />, href: 'mailto:opakijonathan30@gmail.com', label: 'Alternative Email' },
     { icon: <FiPhone />, href: 'https://wa.me/256777038299', label: 'WhatsApp' },
